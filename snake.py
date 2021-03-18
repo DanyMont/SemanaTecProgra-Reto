@@ -44,6 +44,11 @@ def move():
         food.y = randrange(-15, 15) * 10
     else:
         snake.pop(0)
+<<<<<<< HEAD
+=======
+        food.x = randrange(-1, 1) * 10
+        food.y = randrange(-1, 1) * 10
+>>>>>>> cambios_LJAG
 
     clear()
 
