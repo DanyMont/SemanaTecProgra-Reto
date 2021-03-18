@@ -10,12 +10,28 @@ Exercises
 """
 
 from turtle import *
+import random
 from random import randrange
 from freegames import square, vector
 
 food = vector(0, 0)
 snake = [vector(10, 0)]
 aim = vector(0, -10)
+"Added solors so that the game can change snake and food color"
+colors = ['black', 'orange', 'purple', 'blue', 'green']
+snakecolor = 'black'
+foodcolor = 'green'
+
+def choose_color(snakecolor, foodcolor):
+    "Tell Python to choose a random color from the list 'colors'"
+    snakecolor = random.choice(colors)
+    foodcolor = random.choice(colors)
+    
+    "Check if food and snake colors are equal, if so change food color"
+    if foodcolor == snakecolor:
+        foodcolor = random.choice(colors)
+            
+    return snakecolor, foodcolor
 
 def change(x, y):
     "Change snake direction."
@@ -48,14 +64,15 @@ def move():
     clear()
 
     for body in snake:
-        square(body.x, body.y, 9, 'black')
+        square(body.x, body.y, 9, snakecolor)
 
-    square(food.x, food.y, 9, 'green')
+    square(food.x, food.y, 9, foodcolor)
     update()
     ontimer(move, 100)
 
 setup(420, 420, 370, 0)
 hideturtle()
+snakecolor, foodcolor = choose_color(snakecolor, foodcolor)
 tracer(False)
 listen()
 onkey(lambda: change(10, 0), 'Right')
