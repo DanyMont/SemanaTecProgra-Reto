@@ -58,7 +58,7 @@ def move():
 
     # Move the cannon shot
     if inside(ball):
-        speed.y -= 0.5
+        speed.y -= 0.75
         #original 0.35
         ball.move(speed)
 
