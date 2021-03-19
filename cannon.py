@@ -7,6 +7,8 @@ Exercises
 3. Apply gravity to the targets.
 4. Change the speed of the ball.
 
+Daniel Montero, Luis Javier Alonso and Ximena Flores.
+
 """
 
 from random import randrange
