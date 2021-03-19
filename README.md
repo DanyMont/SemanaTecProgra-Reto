@@ -13,6 +13,10 @@ Cambios Ximena:
 - cannon.py - cambio de colores para la varible de target y para la variable de ball dot(20, 'green')
 dot(6, 'yellow')
 
+Cambios Luis Javier:
+- snake.py: se modificó el comportamiento de la comida para que con cada paso de la serpiente, esta se moviera en una dirección aleatoria 1 paso. (food.x = randrange(-1, 1) * 10, food.y = randrange(-1, 1) * 10).
+- cannon.py: se modificaron los valores de la velocidad de los targets como del proyectil. En los targets se cambió la velocidad en el eje "x" y en el proyectil en el eje "y". (speed.y, target.x)
+
 Cambios Daniel: 
 - snake.py: se añadió una función que permite cambiar, cada vez que se corre el juego y de manera aleatoria, los colores de la víbora y la comida (variables 'snakecolor' y 'foodcolor'). De momento se cuentan con 5 colores, la adición de más colores se puede realizar mediante la matriz 'colors'.
 - cannon.py - Se añadio un sistema de vidas personalizable. Por el momento esta configrado a tres pero se puede modificar al gusto mediante la variable 'lifes' dentro del def 'move'.
