@@ -10,7 +10,7 @@ Descripcion cambios realizados:
 Cambios Ximena: 
 - snake.py - cambio del tamaño   inside head: -240 <head.x < 230 and -240 <head.y < 230  
 "setup values "(500, 500, 370,0) 
-- cannon.py - cambio de colores dot(20, 'green')
+- cannon.py - cambio de colores para la varible de target y para la variable de ball dot(20, 'green')
 dot(6, 'yellow')
 
 Cambios Daniel: 
