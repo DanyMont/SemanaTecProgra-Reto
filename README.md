@@ -14,5 +14,5 @@ Cambios Ximena:
 dot(6, 'yellow')
 
 Cambios Daniel: 
-- snake.py: se añadió la una función que permite cambiar, cada vez que se corre el juego y de manera alaetoria, los colores de la víbora y la comida (variables 'snakecolor' y 'foodcolor'). De momento se cuentan con 5 colores, la adición de más colores se puede realizar mediante la matriz 'colors'.
+- snake.py: se añadió una función que permite cambiar, cada vez que se corre el juego y de manera aleatoria, los colores de la víbora y la comida (variables 'snakecolor' y 'foodcolor'). De momento se cuentan con 5 colores, la adición de más colores se puede realizar mediante la matriz 'colors'.
 - cannon.py - Se añadio un sistema de vidas personalizable. Por el momento esta configrado a tres pero se puede modificar al gusto mediante la variable 'lifes' dentro del def 'move'.
