@@ -75,7 +75,7 @@ def move():
     draw()
 
     # Detect when a target reaches the left side
-    "Added if loop to have 'x' ammount of lifes, default is 3, value can be changed in yhe upper part of def move"
+    "Added if loop to have 'x' ammount of lifes, default is 3, value can be changed in the upper part of def move"
     if lifes != 0:
         for target in targets:
             if not inside(target):
@@ -87,7 +87,7 @@ def move():
     ontimer(move, 50)
 
 setup(420, 420, 370, 0)
-hideturtle()
+# hideturtle()
 up()
 tracer(False)
 onscreenclick(tap)
