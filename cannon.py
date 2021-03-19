@@ -44,13 +44,14 @@ def draw():
     update()
 
 def move():
+    lifes = 3
     "Move ball and targets."
     # Generate a new target at random times
     if randrange(40) == 0:
         y = randrange(-150, 150)
         target = vector(200, y)
         targets.append(target)
-
+        
     # Move the existing targets
     for target in targets:
         target.x -= 1
@@ -74,15 +75,19 @@ def move():
     draw()
 
     # Detect when a target reaches the left side
-    for target in targets:
-        if not inside(target):
-            #targets.remove(target)
-            return
+    "Added if loop to have 'x' ammount of lifes, default is 3, value can be changed in the upper part of def move"
+    if lifes != 0:
+        for target in targets:
+            if not inside(target):
+                lifes-=1
+                #targets.remove(target)
+                if lifes == 0:
+                    return
 
     ontimer(move, 50)
 
 setup(420, 420, 370, 0)
-hideturtle()
+# hideturtle()
 up()
 tracer(False)
 onscreenclick(tap)
