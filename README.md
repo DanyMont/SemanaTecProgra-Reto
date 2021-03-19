@@ -23,4 +23,4 @@ Cambios Daniel:
 
 
 
-Enlace a la presentadción: https://docs.google.com/presentation/d/1lhlmWNVv3bE_G5KVLbdgTw7jkLKEZ3iZu0yKkbu9jEg/edit?usp=sharing
+Enlace a la presentación: https://docs.google.com/presentation/d/1lhlmWNVv3bE_G5KVLbdgTw7jkLKEZ3iZu0yKkbu9jEg/edit?usp=sharing
